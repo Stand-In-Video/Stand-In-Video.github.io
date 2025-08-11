@@ -22,10 +22,8 @@ export const PoseGuidedShowcase = ({ showcase }: PoseGuidedShowcaseProps) => {
       {/* Left Column: Selector */}
       <div className="lg:col-span-1 p-4 bg-muted/50 rounded-lg flex flex-col space-y-4">
         
-        {/* === 新增的标题在这里 === */}
         <h4 className="font-semibold text-muted-foreground">Select a First Frame</h4>
 
-        {/* Selector for Source Pose Video */}
         <button
           onClick={() => setActiveIndex(0)}
           className={cn(
@@ -39,10 +37,8 @@ export const PoseGuidedShowcase = ({ showcase }: PoseGuidedShowcaseProps) => {
           <span className="font-semibold">Source Pose</span>
         </button>
 
-        {/* Separator */}
         <div className="border-b border-muted-foreground/20"></div>
 
-        {/* Selectors for Generated Results, now showing large preview images */}
         <div className="flex flex-col space-y-3">
           {showcase.results.map((result, index) => (
             <button
@@ -66,7 +62,8 @@ export const PoseGuidedShowcase = ({ showcase }: PoseGuidedShowcaseProps) => {
       </div>
 
       {/* Right Column: Main Video Player */}
-      <div className="lg:col-span-4 aspect-video rounded-lg border bg-muted overflow-hidden">
+      {/* === 修改点在这里：将 lg:col-span-4 改为 lg:col-span-3 === */}
+      <div className="lg:col-span-3 aspect-video rounded-lg border bg-muted overflow-hidden">
         <video
           key={activeVideoSrc}
           src={activeVideoSrc}
