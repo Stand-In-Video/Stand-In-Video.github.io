@@ -184,10 +184,6 @@ export const task4Data: FaceSwapShowcaseItem[] = [
     sourceVideoSrc: "/videos/task4/1.mp4", // 替换为你的原始视频
     swaps: [
       {
-        portraitSrc: "/images/task4/1.webp", // 替换为你的肖像图片
-        outputVideoSrc: "/videos/task4/2.mp4", // 替换为你的生成视频
-      },
-      {
         portraitSrc: "/images/task4/2.png", // 替换为你的肖像图片
         outputVideoSrc: "/videos/task4/3.mp4", // 替换为你的生成视频
       }
