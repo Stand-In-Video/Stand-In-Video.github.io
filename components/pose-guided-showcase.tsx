@@ -22,7 +22,7 @@ export const PoseGuidedShowcase = ({ showcase }: PoseGuidedShowcaseProps) => {
       {/* Left Column: Selector */}
       <div className="lg:col-span-1 p-4 bg-muted/50 rounded-lg flex flex-col space-y-4">
         
-        <h4 className="font-semibold text-muted-foreground">Select a First Frame</h4>
+        <h4 className="font-semibold text-muted-foreground text-center">Select a First Frame</h4>
 
         <button
           onClick={() => setActiveIndex(0)}
@@ -61,8 +61,6 @@ export const PoseGuidedShowcase = ({ showcase }: PoseGuidedShowcaseProps) => {
         </div>
       </div>
 
-      {/* Right Column: Main Video Player */}
-      {/* === 修改点在这里：将 lg:col-span-4 改为 lg:col-span-3 === */}
       <div className="lg:col-span-3 aspect-video rounded-lg border bg-muted overflow-hidden">
         <video
           key={activeVideoSrc}

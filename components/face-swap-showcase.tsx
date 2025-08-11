@@ -22,7 +22,7 @@ export const FaceSwapShowcase = ({ showcase }: FaceSwapShowcaseProps) => {
       {/* Left Column: Selector */}
       <div className="lg:col-span-1 p-4 bg-muted/50 rounded-lg flex flex-col space-y-4">
         <div>
-          <h4 className="font-semibold mb-2">Select an Identity</h4>
+          <h4 className="font-semibold mb-2 text-center">Select an Identity</h4>
           <button
             onClick={() => setSelectedIndex(0)}
             className={cn(
