@@ -18,7 +18,7 @@ export const StylizedShowcase = ({ showcase }: StylizedShowcaseProps) => {
     <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
       {/* Left Column: Style Selector */}
       <div className="lg:col-span-1 p-4 bg-muted/50 rounded-lg">
-        <h4 className="font-semibold mb-4">Styles</h4>
+        <h4 className="font-semibold mb-4">Select a Style</h4>
         <div className="flex flex-col space-y-2">
           {showcase.styles.map((style, index) => (
             <button

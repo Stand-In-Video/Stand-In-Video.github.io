@@ -21,6 +21,10 @@ export const PoseGuidedShowcase = ({ showcase }: PoseGuidedShowcaseProps) => {
     <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
       {/* Left Column: Selector */}
       <div className="lg:col-span-1 p-4 bg-muted/50 rounded-lg flex flex-col space-y-4">
+        
+        {/* === 新增的标题在这里 === */}
+        <h4 className="font-semibold text-muted-foreground">Select a First Frame</h4>
+
         {/* Selector for Source Pose Video */}
         <button
           onClick={() => setActiveIndex(0)}
@@ -44,18 +48,16 @@ export const PoseGuidedShowcase = ({ showcase }: PoseGuidedShowcaseProps) => {
             <button
               key={result.id}
               onClick={() => setActiveIndex(index + 1)}
-              // 按钮本身变为一个带边框和效果的容器
               className={cn(
                 "w-full rounded-lg overflow-hidden border-2 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background",
                 activeIndex === index + 1
-                  ? "border-primary shadow-lg scale-105" // 选中时高亮
-                  : "border-transparent hover:border-primary/50" // 未选中
+                  ? "border-primary shadow-lg scale-105"
+                  : "border-transparent hover:border-primary/50"
               )}
             >
               <img
                 src={result.firstFrameSrc}
                 alt={`Result ${result.id}`}
-                // 图片充满整个按钮宽度，高度自适应
                 className="w-full h-auto object-cover"
               />
             </button>
@@ -64,7 +66,7 @@ export const PoseGuidedShowcase = ({ showcase }: PoseGuidedShowcaseProps) => {
       </div>
 
       {/* Right Column: Main Video Player */}
-      <div className="lg:col-span-3 aspect-video rounded-lg border bg-muted overflow-hidden">
+      <div className="lg:col-span-4 aspect-video rounded-lg border bg-muted overflow-hidden">
         <video
           key={activeVideoSrc}
           src={activeVideoSrc}
