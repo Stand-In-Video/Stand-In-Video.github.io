@@ -69,7 +69,7 @@ export const task1Data: ShowcaseExample[] = [
   {
     id: 10,
     portraitSrc: "/images/task1/10.jpg",
-    prompt: "The video features a girl painting on a large canvas in a bright studio. She is wearing a paint-splattered apron and has her hair tied up in a bun. The studio is filled with art supplies and colorful paintings on the walls. She concentrates intently on her work, adding brushstrokes to her canvas as soft music plays in the background, creating an inspiring and creative atmosphere.",
+    prompt: "The camera glides back from behind the green flowers in the foreground, gradually bringing the woman’s face into focus. What was once a soft blur sharpens into view, carrying a sense of alluring mystery, until her features are fully revealed—graceful and captivating.",
     outputVideoSrc: "/videos/task1/10.mp4",
   },
   {
