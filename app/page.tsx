@@ -36,7 +36,7 @@ export default function Home() {
               <TaskShowcase title="Video Face Swapping" data={task4Data} type="swap" />
             </section>
             <section id="task-5">
-              <TaskShowcase title="Pose-Guided Video Generation" data={task5Data} type="pose" />
+              <TaskShowcase title="Pose-Guided Video Generation (With VACE)" data={task5Data} type="pose" />
             </section>
           </div>
           
