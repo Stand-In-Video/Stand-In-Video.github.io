@@ -39,7 +39,21 @@ export default function Home() {
               <TaskShowcase title="Pose-Guided Video Generation (With VACE)" data={task5Data} type="pose" />
             </section>
           </div>
-          
+          <section id="citation" className="mt-20">
+                    <h2 className="text-2xl font-bold mb-6 text-center md:text-left">Citation</h2>
+                    <div className="bg-muted/50 p-6 rounded-xl border overflow-x-auto">
+                      <pre className="text-sm md:text-base text-muted-foreground whitespace-pre-wrap font-mono">
+                        <code>
+        {`@inproceedings{xue2025stand,
+          title={Stand-in: A lightweight and plug-and-play identity control for video generation},
+          author={Xue, Bowen and Duan, Zheng-Peng and Yan, Qixin and Wang, Wenjing and Liu, Hao and Guo, Chun-Le and Li, Chongyi and Li, Chen and Lyu, Jing},
+          booktitle={Proceedings of the IEEE/CVF conference on computer vision and pattern recognition},
+          year={2026}
+        }`}
+                        </code>
+                      </pre>
+                    </div>
+                  </section>
           <footer className="text-center mt-20 py-8 text-muted-foreground">
             <p>&copy; 2025 WeChat Vision, Tencent Inc. All Rights Reserved.</p>
           </footer>
