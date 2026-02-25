@@ -21,10 +21,16 @@ export const HeroSection = () => {
       {/* 4. 微调了与下方元素的间距 */}
       <div className="mt-6 text-sm sm:text-base text-muted-foreground">
         <p>
-          Bowen Xue*, Zheng-Peng Duan*, Qixin Yan, Wenjing Wang, Hao Liu, Chun-Le Guo, Chongyi Li, Chen Li, Jing LYU
+          <a href="https://xbwustc.com" target="_blank" rel="noopener noreferrer" className="hover:underline">
+            Bowen Xue
+          </a>*,{" "}
+          <a href="https://adam-duan.github.io/" target="_blank" rel="noopener noreferrer" className="hover:underline">
+            Zheng-Peng Duan
+          </a>*,{" "}
+          Qixin Yan, Wenjing Wang, Hao Liu, Chun-Le Guo, Chongyi Li, Chen Li, Jing LYU
         </p>
         <p className="mt-1">
-          WeChat Vision, Tencent Inc. &nbsp;|&nbsp; VCIP, CS, Nankai University
+          WeChat Vision, Tencent Inc. &emsp;&emsp; VCIP, CS, Nankai University
         </p>
       </div>
 
