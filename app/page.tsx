@@ -41,15 +41,16 @@ export default function Home() {
           </div>
 <section id="citation" className="mt-20">
             <h2 className="text-2xl font-bold mb-6 text-center md:text-left">Citation</h2>
-            <div className="bg-muted/50 p-4 rounded-xl border">
-              {/* text-xs: 缩小字体 | whitespace-nowrap: 强制不换行 | overflow-hidden: 隐藏滚动条 */}
-              <pre className="text-xs text-muted-foreground font-mono whitespace-nowrap overflow-hidden">
+            {/* overflow-x-auto 保证如果屏幕实在太小，可以稍微滑动而不破坏原本布局 */}
+            <div className="bg-muted/50 p-4 rounded-xl border overflow-x-auto">
+              {/* whitespace-pre 是关键：保留代码的回车，但阻止长文本自动换行 */}
+              <pre className="text-xs sm:text-sm text-muted-foreground font-mono whitespace-pre text-left">
                 <code>
 {`@inproceedings{xue2025stand,
-  title={Stand-in: A lightweight and plug-and-play identity control for video generation},
-  author={Xue, Bowen and Duan, Zheng-Peng and Yan, Qixin and Wang, Wenjing and Liu, Hao and Guo, Chun-Le and Li, Chongyi and Li, Chen and Lyu, Jing},
-  booktitle={Proceedings of the IEEE/CVF conference on computer vision and pattern recognition},
-  year={2026}
+    title={Stand-in: A lightweight and plug-and-play identity control for video generation},
+    author={Xue, Bowen and Duan, Zheng-Peng and Yan, Qixin and Wang, Wenjing and Liu, Hao and Guo, Chun-Le and Li, Chongyi and Li, Chen and Lyu, Jing},
+    booktitle={Proceedings of the IEEE/CVF conference on computer vision and pattern recognition},
+    year={2026}
 }`}
                 </code>
               </pre>
